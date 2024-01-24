@@ -7,3 +7,12 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Restaurant.create(name: 'Pizza Presto', category: 'italian', address: 'Marratxi')
+
+Restaurant.create(name: 'Otaku', category: 'chinese', address: 'Palma de Mallorca')
+
+Restaurant.create(name: 'Brasserie Zédel', category: 'french', address: 'London')
+
+Restaurant.create(name: 'Crepes und Waffeln', category: 'belgian', address: 'Berlin')
+
+Restaurant.create(name: 'Tokyo Sushi', category: 'japanese', address: 'Barcelona')
