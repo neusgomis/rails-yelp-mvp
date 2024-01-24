@@ -1,16 +1,16 @@
 <h1><%=@restaurant.name%></h1>
-<p><%= @restaurant.address %></p>
-<p><%= @restaurant.category %></p>
+<p>Location: <%= @restaurant.address %></p>
+<p>Cuisine: <%= @restaurant.category %></p>
 <h4>Reviews:</h4>
-<ul>
+<ul class="list-group my-3">
   <% @reviews.each do |review| %>
-    <li>
+    <li class="list-group-item" style="width: 600px">
       Rating: <%=review.rating %> |
       <%= review.content %>
     </li>
   <% end %>
 </ul>
 
-<button class="btn btn-primary"><%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>
+<button class="btn btn-primary mx-3"><%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>
 
-<button class="btn btn-primary"><%= link_to "Go Back to Restaurants", restaurants_path%></button>
+<button class="btn btn-primary mx-3"><%= link_to "Go Back to Restaurants", restaurants_path%></button>
